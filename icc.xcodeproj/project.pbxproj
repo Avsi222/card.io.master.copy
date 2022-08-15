@@ -2162,7 +2162,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					3E9F4C4A181F07B700F33B48 = {
 						DevelopmentTeam = V8KL7848Q4;
@@ -2510,7 +2510,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54BA1BE2F7A800B669FB /* UnitTest_Debug.xcconfig */;
 			buildSettings = {
-				VALID_ARCHS = "arm64 arm64e armv7";
 			};
 			name = Debug;
 		};
@@ -2518,7 +2517,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54BB1BE2F7A800B669FB /* UnitTest_Release.xcconfig */;
 			buildSettings = {
-				VALID_ARCHS = "arm64 arm64e armv7";
 			};
 			name = Release;
 		};
@@ -2526,7 +2524,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B91BE2F7A800B669FB /* UnitTest_AdHoc.xcconfig */;
 			buildSettings = {
-				VALID_ARCHS = "arm64 arm64e armv7";
 			};
 			name = AdHoc;
 		};
@@ -2534,6 +2531,25 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54AD1BE2F7A800B669FB /* AdHoc.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = "";
 			};
 			name = AdHoc;
@@ -2543,7 +2559,6 @@
 			baseConfigurationReference = A50A54AF1BE2F7A800B669FB /* CardIO_Static_Library_Debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				VALID_ARCHS = "arm64 arm64e armv7";
 			};
 			name = Debug;
 		};
@@ -2552,7 +2567,6 @@
 			baseConfigurationReference = A50A54B01BE2F7A800B669FB /* CardIO_Static_Library_Release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				VALID_ARCHS = "arm64 arm64e armv7";
 			};
 			name = Release;
 		};
@@ -2561,7 +2575,6 @@
 			baseConfigurationReference = A50A54AE1BE2F7A800B669FB /* CardIO_Static_Library_AdHoc.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				VALID_ARCHS = "arm64 arm64e armv7";
 			};
 			name = AdHoc;
 		};
@@ -2569,7 +2582,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A553B71B1BE32664006DF551 /* icc_Static_Library_Debug.xcconfig */;
 			buildSettings = {
-				VALID_ARCHS = "arm64 arm64e armv7";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -2577,7 +2590,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A553B71C1BE32664006DF551 /* icc_Static_Library_Release.xcconfig */;
 			buildSettings = {
-				VALID_ARCHS = "arm64 arm64e armv7";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -2585,7 +2598,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A553B71C1BE32664006DF551 /* icc_Static_Library_Release.xcconfig */;
 			buildSettings = {
-				VALID_ARCHS = "arm64 arm64e armv7";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = AdHoc;
 		};
@@ -2594,7 +2607,8 @@
 			baseConfigurationReference = A50A54BE1BE2FEEC00B669FB /* CardIO_Framework_Debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				VALID_ARCHS = "arm64 arm64e armv7";
+				CODE_SIGN_IDENTITY = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -2603,7 +2617,8 @@
 			baseConfigurationReference = A50A54BF1BE2FEEC00B669FB /* CardIO_Framework_Release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				VALID_ARCHS = "arm64 arm64e armv7";
+				CODE_SIGN_IDENTITY = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -2612,7 +2627,8 @@
 			baseConfigurationReference = A50A54BD1BE2FEEC00B669FB /* CardIO_Framework_Adhoc.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				VALID_ARCHS = "arm64 arm64e armv7";
+				CODE_SIGN_IDENTITY = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = AdHoc;
 		};
@@ -2620,7 +2636,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B41BE2F7A800B669FB /* icc_Debug.xcconfig */;
 			buildSettings = {
-				VALID_ARCHS = "arm64 arm64e armv7";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -2628,7 +2644,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B51BE2F7A800B669FB /* icc_Release.xcconfig */;
 			buildSettings = {
-				VALID_ARCHS = "arm64 arm64e armv7";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -2636,7 +2652,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B31BE2F7A800B669FB /* icc_AdHoc.xcconfig */;
 			buildSettings = {
-				VALID_ARCHS = "arm64 arm64e armv7";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = AdHoc;
 		};
@@ -2644,6 +2660,25 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B21BE2F7A800B669FB /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = "";
 			};
 			name = Debug;
@@ -2652,6 +2687,25 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B81BE2F7A800B669FB /* Release.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = "";
 			};
 			name = Release;
