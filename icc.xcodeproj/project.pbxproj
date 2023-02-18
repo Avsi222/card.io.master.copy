@@ -2608,6 +2608,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "";
+				EXCLUDED_ARCHS = arm64;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
@@ -2618,6 +2619,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "";
+				EXCLUDED_ARCHS = arm64;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
@@ -2628,6 +2630,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "";
+				EXCLUDED_ARCHS = arm64;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = AdHoc;
@@ -2636,6 +2639,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B41BE2F7A800B669FB /* icc_Debug.xcconfig */;
 			buildSettings = {
+				EXCLUDED_ARCHS = arm64;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
@@ -2644,6 +2648,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B51BE2F7A800B669FB /* icc_Release.xcconfig */;
 			buildSettings = {
+				EXCLUDED_ARCHS = arm64;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
@@ -2652,6 +2657,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B31BE2F7A800B669FB /* icc_AdHoc.xcconfig */;
 			buildSettings = {
+				EXCLUDED_ARCHS = arm64;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = AdHoc;
